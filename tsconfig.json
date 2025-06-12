@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "jsx": "react",
+    "strictNullChecks": false,
+    "moduleResolution": "node",
+    "target": "es2015",
+    "module": "esNext",
+    "lib": [
+      "dom",
+      "es5",
+      "es6",
+      "es2018.promise",
+      "esnext.intl",
+      "es2017.intl",
+      "es2018.intl",
+      "ES2022"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "./**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
