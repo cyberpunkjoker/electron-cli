@@ -9,8 +9,7 @@ const App: React.FC = () => {
   const [files, setFiles] = useState([])
 
   useEffect(() => {
-    // window.electronAPI.getDFiles().then(setFiles);
-    window.electronAPI.getFilesFromPython().then(setFiles);
+    window.electronAPI && window.electronAPI.getFilesFromPython().then(setFiles);
   }, []);
 
   return (
@@ -19,7 +18,7 @@ const App: React.FC = () => {
         {
           files.map(item => item)
         }
-        <p className='text-lg'>dsdsdsddssd-----------------</p>
+        <p className='text-6xl'>dsdsdsddssd-----------------</p>
         <Layout></Layout>
       </div>
     </ErrorBoundary>
