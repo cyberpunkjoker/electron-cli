@@ -1,9 +1,6 @@
-const { contextBridge, ipcRenderer } = require('electron');
+import toPreloadEvents from "./utils/preloadEvents"
 
-contextBridge.exposeInMainWorld('electronAPI', {
-  getDFiles: () => ipcRenderer.invoke('get-d-drive-files'),
-  getFilesFromPython: () => ipcRenderer.invoke('get-d-files-python')
-});
+toPreloadEvents()
 
 window.addEventListener('DOMContentLoaded', () => {
   const replaceText = (selector, text) => {

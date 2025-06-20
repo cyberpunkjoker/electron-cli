@@ -73,7 +73,8 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
     alias: { 
-      "@": path.resolve("src") 
+      "@": path.resolve("src"),
+      "shared": path.resolve("shared"),
     },
   },
   plugins: [

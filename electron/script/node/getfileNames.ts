@@ -1,6 +1,6 @@
-const fs = require('fs');
+import fs from 'fs';
 
-function getFilesInDrive(drivePath = 'D:/') {
+export function getFilesInDrive(drivePath = 'D:/') {
   try {
     const files = fs.readdirSync(drivePath);
 
@@ -12,4 +12,3 @@ function getFilesInDrive(drivePath = 'D:/') {
   }
 }
 
-module.exports = { getFilesInDrive };
